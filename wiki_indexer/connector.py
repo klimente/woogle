@@ -111,7 +111,7 @@ class Connector:
         :param threads: amount of threads.
         :type threads: int.
         :returns: None.
-        :raises: TypeError, ValueError.
+        :raises:  ValueError.
         """
         if not isinstance(threads, int):
             raise TypeError("threads must be int")
