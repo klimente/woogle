@@ -106,7 +106,7 @@ class Connector:
 
     def index(self, threads=20):
         """
-        Method that put table into index in elasticsearch in multythreading way.
+        Method tht put table into index in elasticsearch in multythreading way.
 
         :param threads: amount of threads.
         :type threads: int.
