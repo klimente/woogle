@@ -30,5 +30,5 @@ def get_tasks():
         self.ROOT_LOGGER.exception(f'error {type(e).__name__}: {e.args[0]}')
 
 if __name__ == '__main__':
-    application.run(threaded=True, host='0.0.0.0', port=9999)
+    
 
