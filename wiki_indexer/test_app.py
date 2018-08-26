@@ -127,10 +127,6 @@ class TestApp(unittest.TestCase):
             self.inst.index(0)
         self.assertEqual(raised_exception.exception.args[0], 'number of threads must be more than 1')
 
-    def test_delete_index(self):
-        with patch('connector.Connector.es.indices.delete') as mock_es:
-            mock_es.return_value.indices.delete = 'sa'
-            self.assertEqual("asda", self.inst.delete_index())
 
     def test_delete_index_negative(self):
         mock = Mock(side_effect=connector.ElasticConnectionError)
